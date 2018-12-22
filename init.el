@@ -81,6 +81,7 @@ locate PACKAGE."
 (setq display-time-day-and-date t)
 
 ;;yasnippet
+(require-package 'yasnippet)
 (require 'yasnippet)
 (yas/initialize)
 
