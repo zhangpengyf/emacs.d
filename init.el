@@ -36,4 +36,4 @@
 
 (add-hook 'after-init-hook'global-company-mode)
 
-(global-auto-complete-mode t)
+(global-auto-complete-mode 1)
