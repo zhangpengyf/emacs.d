@@ -23,7 +23,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (base16-theme))))
+ '(package-selected-packages (quote (company base16-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,3 +35,5 @@
 (load-theme 'base16-default-dark t)
 
 (global-linum-mode 1) ; always show line numbers
+
+(add-hook 'after-init-hook'global-company-mode)
