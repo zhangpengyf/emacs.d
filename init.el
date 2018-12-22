@@ -84,4 +84,4 @@ locate PACKAGE."
 (require-package 'yasnippet)
 (require-package 'yasnippet-snippets)
 (require 'yasnippet)
-(yas/initialize)
+(yas-global-mode 1)
