@@ -85,3 +85,6 @@ locate PACKAGE."
 (require-package 'yasnippet-snippets)
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; all backups goto ~/.backups instead in the current directory
+(setq backup-directory-alist (quote (("." . "~/.emacs-backups"))))
