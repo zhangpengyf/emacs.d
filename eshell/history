@@ -1,0 +1,9 @@
+ls
+cd
+ls
+./226_ssh.sh
+ls
+cat 226_ssh.sh
+ls
+cd
+ls
