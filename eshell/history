@@ -7,3 +7,46 @@ cat 226_ssh.sh
 ls
 cd
 ls
+ls
+ls
+cat install_emacs.sh 
+grep pull install_emacs.sh 
+ls
+ls
+cd
+ls
+cd code/
+ls
+cd
+ls
+ls
+./226_ssh.sh 
+ls
+./226_ssh.sh
+cat 226_ssh.sh 
+ssh haowen.zp@10.125.56.226ssh haowen.zp@10.125.56.226
+ssh haowen.zp@10.125.56.226
+ls
+ls
+exit
+cd ../
+ansible -i hosts saturn-pre -b --ask-become-pass -m script -a ./ansible_scripts/cmd.sh
+echo $ESHELL
+echo $PATH
+ls
+ansible
+ansible
+env-info
+cd ../
+ls
+ansible -i hosts saturn-pre -b --ask-become-pass -m script -a ./ansible_scripts/cmd.sh
+ansible -i hosts saturn-pre -b --ask-become-pass -m script -a ./ansible_scripts/cmd.sh | grep core
+ansible -i hosts test -b  -m script -a ./ansible_scripts/cmd.sh
+ansible -i hosts test -b  -m script -a ./ansible_scripts/cmd.sh
+lsls
+ls
+ls
+ansible -i hosts test -b  -m script -a ./ansible_scripts/cmd.sh
+ls
+cat ansible_scripts/cmd.sh 
+exit
