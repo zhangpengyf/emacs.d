@@ -8,7 +8,6 @@
 (setq package-archives
   '(("gnu" . "https://elpa.gnu.org/packages/")
      ("melpa" . "https://melpa.org/packages/")
-     ("org" . "http://orgmode.org/elpa/")
      ("melpa-china" . "http://elpa.emacs-china.org/melpa/")))
 (package-initialize)
  
