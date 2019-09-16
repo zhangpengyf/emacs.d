@@ -52,7 +52,7 @@ locate PACKAGE."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit exec-path-from-shell yasnippet auto-complete company base16-theme))))
+    (color-theme magit exec-path-from-shell yasnippet auto-complete company base16-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -67,7 +67,7 @@ locate PACKAGE."
 ;;load theme
 (load-theme 'base16-default-dark t)
 
-(global-linum-mode 1) ; always show line numbers
+;(global-linum-mode 1) ; always show line numbers
 
 (add-hook 'after-init-hook'global-company-mode)
 
