@@ -8,7 +8,6 @@
 (setq package-archives
   '(("gnu" . "https://elpa.gnu.org/packages/")
      ("melpa" . "https://melpa.org/packages/")
-     ("org" . "http://orgmode.org/elpa/")
      ("melpa-china" . "http://elpa.emacs-china.org/melpa/")))
 (package-initialize)
  
@@ -97,3 +96,5 @@ locate PACKAGE."
 (setq-default indent-tabs-mode nil)
 (setq c-default-style "Linux")
 (setq c-basic-offset 4)
+
+(require-package 'magit)
