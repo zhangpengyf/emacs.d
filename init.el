@@ -99,3 +99,5 @@ locate PACKAGE."
 
 (require-package 'magit)
 (setq-default cursor-type 'bar)
+
+(set-frame-position (selected-frame) 400 300)
