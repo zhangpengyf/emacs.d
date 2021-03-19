@@ -38,39 +38,13 @@ locate PACKAGE."
       nil)))
 
 
-
-(set-face-foreground 'minibuffer-prompt "blue")
-
 ;; all backups goto ~/.backups instead in the current directory
 (setq backup-directory-alist (quote (("." . "~/.emacs_backups"))))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (base16-ocean)))
- '(custom-safe-themes
-   (quote
-    ("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" "7c0495f3973b9f79251205995ccccca41262b41a86553f81efe71c0dc3a50f43" "5a39d2a29906ab273f7900a2ae843e9aa29ed5d205873e1199af4c9ec921aaab" default)))
- '(package-selected-packages
-   (quote
-    (yasnippet-snippets color-theme magit exec-path-from-shell yasnippet auto-complete company base16-theme))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-(require-package 'base16-theme)
 (require-package 'auto-complete)
 (require-package 'company)
 
-;;load theme
-(load-theme 'base16-default-dark t)
-
-;(global-linum-mode 1) ; always show line numbers
+(global-linum-mode 1) ; always show line numbers
 
 (add-hook 'after-init-hook'global-company-mode)
 
@@ -106,3 +80,16 @@ locate PACKAGE."
 
 (set-frame-position (selected-frame) 400 300)
 (setq apropos-sort-by-scores t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(minibuffer-prompt-properties '(face minibuffer-prompt)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(minibuffer-prompt ((t (:foreground "brightred")))))
