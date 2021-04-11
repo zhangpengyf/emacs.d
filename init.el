@@ -59,10 +59,10 @@ locate PACKAGE."
 (setq display-time-day-and-date t)
 
 ;;yasnippet
-(require-package 'yasnippet)
-(require-package 'yasnippet-snippets)
-(require 'yasnippet)
-(yas-global-mode 1)
+;;(require-package 'yasnippet)
+;;(require-package 'yasnippet-snippets)
+;;(require 'yasnippet)
+;;(yas-global-mode 1)
 
 ;; all backups goto ~/.backups instead in the current directory
 (setq backup-directory-alist (quote (("." . "~/.emacs-backups"))))
@@ -81,6 +81,12 @@ locate PACKAGE."
 (set-frame-position (selected-frame) 400 300)
 (setq apropos-sort-by-scores t)
 
+
+(set-language-environment "UTF-8")
+;;S-LEFt ...
+(windmove-default-keybindings)
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -88,19 +94,17 @@ locate PACKAGE."
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(custom-enabled-themes '(base16-ocean))
+ '(ansi-color-names-vector
+   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(ansi-term-color-vector
+   [unspecified "#383838" "#dca3a3" "#5f7f5f" "#e0cf9f" "#7cb8bb" "#dc8cc3" "#7cb8bb" "#dcdccc"])
+ '(custom-enabled-themes (quote (light-blue)))
  '(custom-safe-themes
-   '("dec9f609326294ff492bb258663005c5dd21816e60629d1aac70ae43169fbe3e" "6145e62774a589c074a31a05dfa5efdf8789cf869104e905956f0cbd7eda9d0e" "c9f102cf31165896631747fd20a0ca0b9c64ecae019ce5c2786713a5b7d6315e" "5a7830712d709a4fc128a7998b7fa963f37e960fd2e8aa75c76f692b36e6cf3c" "760ce657e710a77bcf6df51d97e51aae2ee7db1fba21bbad07aab0fa0f42f834" "78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" "b3bcf1b12ef2a7606c7697d71b934ca0bdd495d52f901e73ce008c4c9825a3aa" default))
- '(minibuffer-prompt-properties '(face minibuffer-prompt)))
+   (quote
+    ("bc4c89a7b91cfbd3e28b2a8e9e6750079a985237b960384f158515d32c7f0490" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(minibuffer-prompt ((t (:foreground "brightred")))))
-
-(set-language-environment "UTF-8")
-;;S-LEFt ...
-(windmove-default-keybindings)
-
-
+ )
