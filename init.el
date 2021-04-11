@@ -100,7 +100,7 @@ locate PACKAGE."
  '(minibuffer-prompt ((t (:foreground "brightred")))))
 
 (set-language-environment "UTF-8")
-
-
+;;S-LEFt ...
+(windmove-default-keybindings)
 
 
