@@ -98,13 +98,19 @@ locate PACKAGE."
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(ansi-term-color-vector
    [unspecified "#383838" "#dca3a3" "#5f7f5f" "#e0cf9f" "#7cb8bb" "#dc8cc3" "#7cb8bb" "#dcdccc"])
- '(custom-enabled-themes (quote (light-blue)))
+ '(custom-enabled-themes '(light-blue))
  '(custom-safe-themes
-   (quote
-    ("bc4c89a7b91cfbd3e28b2a8e9e6750079a985237b960384f158515d32c7f0490" default))))
+   '("bc4c89a7b91cfbd3e28b2a8e9e6750079a985237b960384f158515d32c7f0490" default))
+ '(package-selected-packages
+   '(ggtags yasnippet-snippets magit company base16-theme auto-complete)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(minibuffer-prompt ((t (:foreground "brightred")))))
+
+
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
